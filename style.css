@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(design/teglafal.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    font-size: 10pt;
+    margin: 0px;
+    padding: 0px;
+}
+
+header h1{
+    margin: 0px;
+    letter-spacing: 4px;
+    font-size: 32px;
+}
+
+main{
+    overflow:auto;
+    max-width: 1000px;
+    width: 80%;
+    background-color: #333333;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "a n"
+    "f f";
+    margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: gray;
+}
+
+header{
+    background-image: url(design/beer-new_401732638.jpg);
+    background-size: cover;
+    height: 300px;
+    overflow:auto;
+    font-weight: bold;
+    font-family: "Garamond";
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    max-width: 1000px;
+    width: 100%;
+    grid-area: h;
+}
+
+header>h1{
+    color: white;
+    margin-left: 30px;
+}
+
+article{
+    background-color: black;
+    color: white;
+    grid-area: a;
+    text-align: justify;
+}
+
+article>h2{
+    margin: 0px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+article li{
+    font-size: 10px;
+    list-style-type: square;
+    margin-right: 20px;
+}
+
+.tartalom{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.tartalom img{
+    width: 75%;
+    margin: auto;
+    border: 4px grey double;
+}
+
+nav{
+    background-color: rgb(22, 21, 21);
+    grid-area: n;
+}
+
+nav li{
+    list-style-type: none;
+    display: border;
+    border: 1px white solid;
+    border-radius: 5px;
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 2px;
+}
+
+ul{
+    padding: 0px;
+}
+
+nav li:hover{
+    background-color: gray;
+}
+
+footer{
+    grid-area: f;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+a:link {
+    color: red;
+  }
+  
+a:visited {
+    color: red;
+  }
+  
+a:hover {
+    color: white;
+  }
+  
+a:active {
+    color: white;
+  }
+
+table td{
+    border: 1px gray solid;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+tr:nth-child(){
+    background-color: gray;
+}
+
+
+@media screen and (max-width: 700px) {
+    main{
+        overflow:auto;
+        max-width: 1000px;
+        width: 80%;
+        background-color: #333333;
+        margin: auto;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "a"
+        "f";
+    }
+
+    .tartalom{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
